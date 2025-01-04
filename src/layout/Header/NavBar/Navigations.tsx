@@ -1,25 +1,19 @@
-import ExpandMore from '@mui/icons-material/ExpandMore';
-import HomeNav from './NavSections/HomeNavigations/HomeNav';
+import NavList from './NavSections/HomeNavigations/NavList';
+import { HomeNavigations, ShopNavigations } from '../../../utilities/data';
+import MobileNavigations from './MobileNavigations';
+
 import './Navigations.css';
 
 function Navigations() {
     return (
-        <div className="navigations h-[50px] w-[30%] text-black">
-            <ul className="flex justify-between items-center h-[50px]">
-                <HomeNav />
-                <li className="h-[40px] w-[23%] flex justify-center items-center cursor-pointer hover:bg-[#f3f8fa]">
-                    <span>Shop</span>
-                    <ExpandMore />
-                </li>
-                <li className="h-[40px] w-[23%] flex justify-center items-center cursor-pointer hover:bg-[#f3f8fa]">
-                    <span>About</span>
-                    <ExpandMore />
-                </li>
-                <li className="h-[40px] w-[23%] flex justify-center items-center cursor-pointer hover:bg-[#f3f8fa]">
-                    <span>Contact</span>
-                    <ExpandMore />
-                </li>
+        <div className="navigations h-[50px] w-[fit-content] text-black mr-[50px] flex items-center">
+            <ul className="flex justify-between items-center mr-[40px]">
+                <NavList title='Home' navs={HomeNavigations}/>
+                <NavList title='Shop' navs={ShopNavigations}/>
+                <NavList title='About' navs={HomeNavigations}/>
+                <NavList title='Contact' navs={HomeNavigations}/>
             </ul>
+            <MobileNavigations />
         </div>
     );
 }
