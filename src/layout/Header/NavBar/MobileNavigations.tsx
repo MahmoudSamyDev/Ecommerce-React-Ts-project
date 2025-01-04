@@ -20,12 +20,18 @@ export default function AnchorTemporaryDrawer() {
         home: {
             title: 'Home',
             show: false,
-            options: HomeNavigations
+            options: {
+                elements: HomeNavigations,
+                show: true
+            }
         },
         shop: {
             title: 'Shop',
             show: false,
-            options: ShopNavigations
+            options: {
+                elements: ShopNavigations,
+                show: false
+            }
         }
     });
 
