@@ -3,13 +3,10 @@ import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import List from '@mui/material/List';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
-import ExpandMore from '@mui/icons-material/ExpandMore';
-import Collapse from '@mui/material/Collapse';
-import ExpandLess from '@mui/icons-material/ExpandLess';
 import { HomeNavigations, ShopNavigations } from '../../../utilities/data';
+import MobileNavItem from './MobileNavItem';
+
 
 type Anchor = 'top';
 type MenuName = 'home' | 'shop';
@@ -20,15 +17,26 @@ export default function AnchorTemporaryDrawer() {
     });
 
     const [openMenus, setOpenMenus] = React.useState({
-        home: false,
-        shop: false
+        home: {
+            title: 'Home',
+            show: false,
+            options: HomeNavigations
+        },
+        shop: {
+            title: 'Shop',
+            show: false,
+            options: ShopNavigations
+        }
     });
 
     const handleMenu = (menuName: MenuName) => (event: React.MouseEvent) => {
         event.stopPropagation();
         setOpenMenus(prev => ({
             ...prev,
-            [menuName]: !prev[menuName]
+            [menuName]: {
+                ...prev[menuName],
+                show: !prev[menuName].show
+            }
         }));
     };
 
@@ -53,33 +61,14 @@ export default function AnchorTemporaryDrawer() {
         >
             <List>
 
-                <ListItemButton onClick={handleMenu('home')}>
-                    <ListItemText primary="Home" />
-                    {openMenus.home ? <ExpandLess /> : <ExpandMore />}
-                </ListItemButton>
-                <Collapse in={openMenus.home} timeout="auto" unmountOnExit>
-                    <List component="div" disablePadding>
-                        {HomeNavigations?.map((nav, index) => (
-                            <ListItemButton key={index} sx={{ pl: 4 }}>
-                                <ListItemText primary={nav.title} />
-                            </ListItemButton>
-                        ))}
-                    </List>
-                </Collapse>
-
-                <ListItemButton onClick={handleMenu('shop')}>
-                    <ListItemText primary="Shop" />
-                    {openMenus.shop ? <ExpandLess /> : <ExpandMore />}
-                </ListItemButton>
-                <Collapse in={openMenus.shop} timeout="auto" unmountOnExit>
-                    <List component="div" disablePadding>
-                        {ShopNavigations?.map((nav, index) => (
-                            <ListItemButton key={index} sx={{ pl: 4 }}>
-                                <ListItemText primary={nav.title} />
-                            </ListItemButton>
-                        ))}
-                    </List>
-                </Collapse>
+            {Object.keys(openMenus).map((menuName) => (
+                <MobileNavItem 
+                    key={menuName}
+                    menuName={menuName as MenuName}
+                    openMenus={openMenus}
+                    handleMenu={handleMenu}
+                />
+            ))}
             </List>
         </Box>
     );
