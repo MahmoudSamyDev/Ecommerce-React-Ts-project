@@ -7,7 +7,13 @@ import Collapse from '@mui/material/Collapse';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShirt, faHouse, faSuitcaseMedical, faVolleyball, faPlugCircleBolt, faCarRear, faDice } from '@fortawesome/free-solid-svg-icons';
+import { faShirt,
+    faHouse,
+    faSuitcaseMedical,
+    faVolleyball,
+    faPlugCircleBolt,
+    faCarRear,
+    faDice } from '@fortawesome/free-solid-svg-icons';
 import CategoryIcon from '@mui/icons-material/Category';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
@@ -49,10 +55,11 @@ function CategoriesMenu() {
             ref={menuRef}
             sx={{
                 width: '100%',
+                heigth: '100%',
                 maxWidth: 360,
                 bgcolor: 'background.paper',
                 position: 'absolute',
-                top: 0,
+                top: -8,
                 left: 0,
                 zIndex: 1000
             }}
@@ -63,7 +70,7 @@ function CategoriesMenu() {
                 <ListItemIcon>
                     <CategoryIcon />
                 </ListItemIcon>
-                <ListItemText primary="All Categories" />
+                <ListItemText primary="All Categories"/>
                 {open ? <ExpandLess /> : <ExpandMore />}
             </ListItemButton>
             <Collapse in={open} timeout="auto" unmountOnExit>
