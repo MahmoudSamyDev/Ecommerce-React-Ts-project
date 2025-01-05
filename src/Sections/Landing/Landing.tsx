@@ -7,7 +7,7 @@ function Landing() {
     return (
         <div className="main-header-container w-full content-center py-[15px]">
             <ContainerWrapper>
-                <div className="flex flex-col lg:flex-row gap-4 justify-between min-h-[490px] max-h-[fit-content]">
+                <div className="flex flex-col lg:flex-row gap-4 justify-between min-h-[fit-content] h-[490px] max-h-[fit-content]">
                     <SliderAds />
                     <Box sx={{flexDirection: {xs: 'row', md: 'column'}, display:'flex', gap: '10px', justifyContent: 'space-between'}}>
                         <BoxAd 

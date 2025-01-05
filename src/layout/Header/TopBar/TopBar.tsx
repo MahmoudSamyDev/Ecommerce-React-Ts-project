@@ -5,7 +5,7 @@ import ContainerWrapper from "../../../layout/Components/ContainerWrapper";
 
 function TopBar() {
     return (
-        <div className="top-bar-container w-full bg-darkBlue h-[35px]">
+        <div className="top-bar-container w-full bg-darkBlue min-h-[35px] max-h-[fit-content]">
             <ContainerWrapper>
                 <div className='top-bar flex-col md:flex-row py-[6px] flex justify-between h-full items-center text-white'>
                     <div className="w-full md:w-[200px] flex justify-between items-center space-x-[20px]">
