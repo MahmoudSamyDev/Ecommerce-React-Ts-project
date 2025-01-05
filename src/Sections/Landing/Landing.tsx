@@ -5,7 +5,7 @@ import BoxAd from './BoxAd';
 
 function Landing() {
     return (
-        <div className="main-header-container w-full content-center py-[10px]">
+        <div className="main-header-container w-full content-center py-[15px]">
             <ContainerWrapper>
                 <div className="flex flex-col lg:flex-row gap-4 justify-between min-h-[490px] max-h-[fit-content]">
                     <SliderAds />

@@ -18,7 +18,7 @@ import CategoryIcon from '@mui/icons-material/Category';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 const categories = [
-    { name: 'All Categories', icon: <CategoryIcon />, more: true },
+    { name: 'All Categories', icon: <CategoryIcon sx={{fontSize: '14px'}} />, more: true },
     { name: 'Electronics', icon: <FontAwesomeIcon icon={faPlugCircleBolt} />, more: true },
     { name: 'Automobile', icon: <FontAwesomeIcon icon={faCarRear} />, more: true },
     { name: 'Fashion', icon: <FontAwesomeIcon icon={faShirt} />, more: true },
@@ -26,7 +26,6 @@ const categories = [
     { name: 'Health & Beauty', icon: <FontAwesomeIcon icon={faSuitcaseMedical} />, more: true },
     { name: 'Sports', icon: <FontAwesomeIcon icon={faVolleyball} />, more: true },
     { name: 'Toys & Hobbies', icon: <FontAwesomeIcon icon={faDice} />, more: true },
-    { name: 'Others' },
 ];
 
 function CategoriesMenu() {
@@ -51,34 +50,34 @@ function CategoriesMenu() {
     }, []);
 
     return (
-        <div className='categoriesMenu'>
+        <div className='categoriesMenu flex-1'>
             <List
                 ref={menuRef}
                 sx={{
-                    bgcolor: 'background.paper',
                     position: 'absolute',
-                    top: -8,
+                    top: 0,
                     left: 0,
                     zIndex: 1000,
+                    height: '100%',
                 }}
                 component="nav"
                 aria-labelledby="nested-list-subheader"
             >
-                <ListItemButton onClick={handleClick}>
-                    <ListItemIcon>
-                        <CategoryIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="All Categories"/>
+                <ListItemButton onClick={handleClick} sx={{ height: '100%', background: '#f0f0f0', borderRadius: '5px' }}>
+                    <div className='flex items-center mr-[20px]'>
+                        <CategoryIcon sx={{fontSize: '18px', marginRight: '15px'}} />
+                        <ListItemText sx={{".MuiTypography-root": {fontSize: '13px'}, fontSize: '10px'}} primary="All Categories"/>
+                    </div>
                     {open ? <ExpandLess /> : <ExpandMore />}
                 </ListItemButton>
-                <Collapse in={open} timeout="auto" unmountOnExit>
+                <Collapse in={open} timeout="auto" sx={{background: 'white', padding: '0'}} unmountOnExit>
                     <List component="div" disablePadding>
                         {categories.map((category, index) => (
-                            <ListItemButton key={index} sx={{ pl: 4 }}>
+                            <ListItemButton  sx={{paddingY: '5px'}} key={index}>
                                 <ListItemIcon>
                                     {category.icon}
                                 </ListItemIcon>
-                                <ListItemText primary={category.name} />
+                                <ListItemText sx={{".MuiTypography-root": {fontSize: '13px'}}}  primary={category.name} />
                                 {category.more ? <ChevronRightIcon /> : null}
                             </ListItemButton>
                         ))}

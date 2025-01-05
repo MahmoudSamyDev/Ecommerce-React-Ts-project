@@ -6,7 +6,7 @@ function Header() {
     return (
         <header className='header'>
             <TopBar />
-            <div className='bg-white'>
+            <div className='bg-white py-[5px]'>
                 <MainHeader />
                 <NavBar />
             </div>

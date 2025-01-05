@@ -1,3 +1,10 @@
+import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
+import CurrencyExchangeOutlinedIcon from '@mui/icons-material/CurrencyExchangeOutlined';
+import TimerOutlinedIcon from '@mui/icons-material/TimerOutlined';
+import CreditScoreOutlinedIcon from '@mui/icons-material/CreditScoreOutlined';
+
+// Navigation Bar data
+
 export const HomeNavigations = [
     {
         title: 'Market',
@@ -44,4 +51,33 @@ export const ShopNavigations = [
         elements: ['Chairs', 'Cupboard', 'Ai assistants']
     },
     {title: 'Gift Store'},
+]
+
+// Home Section data
+
+export const valuesCards = [
+    {
+        id: 1,
+        icon: <LocalShippingOutlinedIcon sx={{fontSize: "36px"}}/>,
+        title: 'Fast Delivery',
+        description: 'Start from $10'
+    },
+    {
+        id: 2,
+        icon: <CurrencyExchangeOutlinedIcon sx={{fontSize: "36px"}}/>,
+        title: 'Money Guarantee',
+        description: '7 Days Back'
+    },
+    {
+        id: 3,
+        icon: <TimerOutlinedIcon sx={{fontSize: "36px"}}/>,
+        title: '365 Days',
+        description: 'For free return'
+    },
+    {
+        id: 4,
+        icon: <CreditScoreOutlinedIcon sx={{fontSize: "36px"}}/>,
+        title: 'Payment',
+        description: 'Secure system'
+    }
 ]
