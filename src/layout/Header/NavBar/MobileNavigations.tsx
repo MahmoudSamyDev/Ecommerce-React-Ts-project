@@ -11,7 +11,7 @@ import MobileNavItem from './MobileNavItem';
 type Anchor = 'top';
 type MenuName = 'home' | 'shop';
 
-export default function AnchorTemporaryDrawer() {
+function MobileNavigations() {
     const [state, setState] = React.useState({
         top: false,
     });
@@ -96,3 +96,5 @@ export default function AnchorTemporaryDrawer() {
         </div>
     );
 }
+
+export default MobileNavigations;

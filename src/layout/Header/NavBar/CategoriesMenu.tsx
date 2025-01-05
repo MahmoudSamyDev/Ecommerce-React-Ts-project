@@ -51,42 +51,41 @@ function CategoriesMenu() {
     }, []);
 
     return (
-        <List
-            ref={menuRef}
-            sx={{
-                width: '100%',
-                heigth: '100%',
-                maxWidth: 360,
-                bgcolor: 'background.paper',
-                position: 'absolute',
-                top: -8,
-                left: 0,
-                zIndex: 1000
-            }}
-            component="nav"
-            aria-labelledby="nested-list-subheader"
-        >
-            <ListItemButton onClick={handleClick}>
-                <ListItemIcon>
-                    <CategoryIcon />
-                </ListItemIcon>
-                <ListItemText primary="All Categories"/>
-                {open ? <ExpandLess /> : <ExpandMore />}
-            </ListItemButton>
-            <Collapse in={open} timeout="auto" unmountOnExit>
-                <List component="div" disablePadding>
-                    {categories.map((category, index) => (
-                        <ListItemButton key={index} sx={{ pl: 4 }}>
-                            <ListItemIcon>
-                                {category.icon}
-                            </ListItemIcon>
-                            <ListItemText primary={category.name} />
-                            {category.more ? <ChevronRightIcon /> : null}
-                        </ListItemButton>
-                    ))}
-                </List>
-            </Collapse>
-        </List>
+        <div className='categoriesMenu'>
+            <List
+                ref={menuRef}
+                sx={{
+                    bgcolor: 'background.paper',
+                    position: 'absolute',
+                    top: -8,
+                    left: 0,
+                    zIndex: 1000,
+                }}
+                component="nav"
+                aria-labelledby="nested-list-subheader"
+            >
+                <ListItemButton onClick={handleClick}>
+                    <ListItemIcon>
+                        <CategoryIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="All Categories"/>
+                    {open ? <ExpandLess /> : <ExpandMore />}
+                </ListItemButton>
+                <Collapse in={open} timeout="auto" unmountOnExit>
+                    <List component="div" disablePadding>
+                        {categories.map((category, index) => (
+                            <ListItemButton key={index} sx={{ pl: 4 }}>
+                                <ListItemIcon>
+                                    {category.icon}
+                                </ListItemIcon>
+                                <ListItemText primary={category.name} />
+                                {category.more ? <ChevronRightIcon /> : null}
+                            </ListItemButton>
+                        ))}
+                    </List>
+                </Collapse>
+            </List>
+        </div>
     );
 }
 

@@ -4,12 +4,10 @@ import Navigations from "./Navigations";
 
 function NavBar() {
     return (
-        <div className="navBar w-full h-[50px] my-[10px]">
+        <div className="navBar w-full h-[50px] my-[10px] relative z-[1000] text-[14px]">
             <ContainerWrapper>
                 <div className="w-[100%] flex flex-col md:flex-row justify-between items-center relative h-[50px]">
-                    <div>
-                        <CategoriesMenu />
-                    </div>
+                    <CategoriesMenu />
                     <Navigations />
                 </div>
             </ContainerWrapper>
