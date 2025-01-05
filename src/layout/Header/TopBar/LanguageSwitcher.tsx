@@ -25,9 +25,9 @@ function LanguageSwitcher() {
                 aria-haspopup="true"
                 aria-expanded={open ? 'true' : undefined}
                 onClick={handleClick}
-                sx={{color: 'white', padding: '0', fontSize: '15px'}}
+                sx={{color: 'white', padding: '0', fontSize: '10px'}}
             >
-                {SelectedLanguage} <KeyboardArrowDownIcon />
+                {SelectedLanguage} <KeyboardArrowDownIcon sx={{fontSize: '20px'}}/>
             </Button>
             <Menu
                 id="basic-menu"
@@ -38,8 +38,8 @@ function LanguageSwitcher() {
                 'aria-labelledby': 'basic-button',
                 }}
             >
-                <MenuItem sx={{fontSize: '15px', paddingX: 2}} onClick={() => handleClose('EN')}>EN</MenuItem>
-                <MenuItem sx={{fontSize: '15px', paddingX: 2}} onClick={() => handleClose('AR')}>AR</MenuItem>
+                <MenuItem sx={{fontSize: '12px', paddingX: 2}} onClick={() => handleClose('EN')}>EN</MenuItem>
+                <MenuItem sx={{fontSize: '12px', paddingX: 2}} onClick={() => handleClose('AR')}>AR</MenuItem>
             </Menu>
         </>
     );

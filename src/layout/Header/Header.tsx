@@ -6,8 +6,10 @@ function Header() {
     return (
         <header className='header'>
             <TopBar />
-            <MainHeader />
-            <NavBar />
+            <div className='bg-white'>
+                <MainHeader />
+                <NavBar />
+            </div>
         </header>
     );
 }
