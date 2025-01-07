@@ -1,0 +1,18 @@
+.loader:before {
+    content: "Pay only for your loving electronics";
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    padding-right: 100%;
+    transform: translate(100%, -50%);
+    animation: scroll-text 10s linear infinite;
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

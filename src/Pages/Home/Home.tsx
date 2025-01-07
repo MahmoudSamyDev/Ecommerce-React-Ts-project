@@ -5,7 +5,7 @@ import BlackFridaySale from '../../Sections/Ads/BlackFridaySale';
 
 function Home() {
     return (
-        <div className='home w-full bg-[#f8f8f8]'>
+        <div className='home w-full bg-background'>
             <Landing />
             <Values />
             <ProductNav />

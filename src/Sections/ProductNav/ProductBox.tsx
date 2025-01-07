@@ -6,10 +6,10 @@ interface ProductBox_TP {
 
 function ProductBox({ product }: { product: ProductBox_TP }) {
     return (
-    <div key={product.id} className="product-nav-item group cursor-pointer relative overflow-hidden rounded-[15px] grow">
+        <div key={product.id} className="product-nav-item group cursor-pointer relative overflow-hidden rounded-[15px]">
             <img 
                 src={product.src} 
-                className='h-full w-full ease-in-out duration-300 group-hover:scale-105' 
+                className="h-auto w-full ease-in-out duration-300 group-hover:scale-105" 
                 alt={product.title} 
             />
             <button 
@@ -17,7 +17,8 @@ function ProductBox({ product }: { product: ProductBox_TP }) {
                 {product.title}
             </button>
         </div>
-    )
+    );
 }
 
 export default ProductBox;
+
