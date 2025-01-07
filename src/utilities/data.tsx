@@ -54,7 +54,6 @@ export const ShopNavigations = [
 ]
 
 // Home Section data
-
 export const valuesCards = [
     {
         id: 1,
@@ -80,4 +79,36 @@ export const valuesCards = [
         title: 'Payment',
         description: 'Secure system'
     }
+]
+export const Products = [
+    {
+        id: 1,
+        title: 'Toys',
+        src: 'src/assets/ProductsNav/Toys.webp'
+    },
+    {
+        id: 2,
+        title: 'Sports',
+        src: 'src/assets/ProductsNav/Sports.webp'
+    },
+    {
+        id: 3,
+        title: 'Gaming',
+        src: 'src/assets/ProductsNav/Gaming.webp'
+    },
+    {
+        id: 4,
+        title: 'Furniture',
+        src: 'src/assets/ProductsNav/Furniture.webp'
+    },
+    {
+        id: 5,
+        title: 'Fashion',
+        src: 'src/assets/ProductsNav/Fashion.webp'
+    },
+    {
+        id: 6,
+        title: 'Cameras',
+        src: 'src/assets/ProductsNav/Cameras.webp'
+    },
 ]

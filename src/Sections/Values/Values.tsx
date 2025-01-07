@@ -7,7 +7,7 @@ import Value from "./ValueCard";
 
 function Values() {
     return (
-        <div className="main-header-container w-full content-center">
+        <div className="main-header-container w-full content-center mb-[50px]">
             <ContainerWrapper>
                 <div className="w-[100%] bg-white min-h-[100px] max-h-[fit-content] rounded-[14px] my-[10px] content-center py-[15px] md:py-0">
                     <Box sx={{ flexGrow: 1 }}>
