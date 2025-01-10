@@ -4,10 +4,9 @@ import SlideObj from './SlideObj';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import './swiper.css';
-import './pagination.css';
-
-import './styles.css';
+import '../../SwiperStyleSheets/styles.css';
+import '../../SwiperStyleSheets/pagination.css';
+import '../../SwiperStyleSheets/swiper.css';
 
 // import required modules
 import { Pagination } from 'swiper/modules';

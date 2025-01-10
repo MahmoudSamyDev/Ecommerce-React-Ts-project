@@ -1,10 +1,20 @@
+// MUI Icons
 import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
 import CurrencyExchangeOutlinedIcon from '@mui/icons-material/CurrencyExchangeOutlined';
 import TimerOutlinedIcon from '@mui/icons-material/TimerOutlined';
 import CreditScoreOutlinedIcon from '@mui/icons-material/CreditScoreOutlined';
 
-// Navigation Bar data
+// Images for products cards
+import Product1 from '../assets//ProductsSlides/Product-1.webp';
+import Product2 from '../assets//ProductsSlides/Product-2.webp';
+import Product3 from '../assets//ProductsSlides/Product-3.webp';
+import Product4 from '../assets//ProductsSlides/Product-4.webp';
+import Product5 from '../assets//ProductsSlides/Product-5.webp';
+import Product6 from '../assets//ProductsSlides/Product-6.webp';
+import Product7 from '../assets//ProductsSlides/Product-7.webp';
+import Product8 from '../assets//ProductsSlides/Product-8.webp';
 
+// Navigation Bar data
 export const HomeNavigations = [
     {
         title: 'Market',
@@ -110,5 +120,64 @@ export const Products = [
         id: 6,
         title: 'Cameras',
         src: 'src/assets/ProductsNav/Cameras.webp'
+    },
+]
+
+export const ProductsSlides = [
+    {
+        id: 1,
+        title: 'Product 1',
+        rate: 4.5,
+        src: Product1,
+        price: 100
+    },
+    {
+        id: 2,
+        title: 'Product 2',
+        rate: 4.5,
+        src: Product2,
+        price: 100
+    },
+    {
+        id: 3,
+        title: 'Product 3',
+        rate: 4.5,
+        src: Product3,
+        price: 100
+    },
+    {
+        id: 4,
+        title: 'Product 4',
+        rate: 4.5,
+        src: Product4,
+        price: 100
+    },
+    {
+        id: 5,
+        title: 'Product 5',
+        rate: 4.5,
+        src: Product5,
+        price: 100
+    },
+    {
+        id: 6,
+        title: 'Product 6',
+        rate: 4.5,
+        src: Product6,
+        price: 100
+    },
+    {
+        id: 7,
+        title: 'Product 7',
+        rate: 4.5,
+        src: Product7,
+        price: 100
+    },
+    {
+        id: 8,
+        title: 'Product 8',
+        rate: 4.5,
+        src: Product8,
+        price: 100
     },
 ]

@@ -26,7 +26,8 @@ function NavList({navs, title}: NavListProps): JSX.Element {
                     bgcolor: 'background.paper',
                     display: 'none',
                     background: 'transparent',
-                    top: "35px",
+                    // background: 'red',
+                    top: "30px",
                 }}
             >
                 <Paper sx={{marginTop: '20px', borderRadius: '14px'}}>

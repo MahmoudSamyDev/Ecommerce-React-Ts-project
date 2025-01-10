@@ -2,6 +2,7 @@ import Landing from '../../Sections/Landing/Landing';
 import Values from '../../Sections/Values/Values';
 import ProductNav from '../../Sections/ProductNav/ProductNav';
 import BlackFridaySale from '../../Sections/Ads/BlackFridaySale';
+import DealsOfTheDay from '../../Sections/DealsOfTheDay/DealsOfTheDay';
 
 function Home() {
     return (
@@ -10,6 +11,7 @@ function Home() {
             <Values />
             <ProductNav />
             <BlackFridaySale />
+            <DealsOfTheDay />
         </div>
     );
 }

@@ -14,7 +14,7 @@ function Landing() {
                             content={{title: 'New Arrivals', offer: <span>Summer<br /> SALE 20% OFF</span>} } 
                             img={<img src="src/assets/Landing/3.jpg" className='h-full w-full' alt="placeholder" />}
                         />
-                        <BoxAd 
+                        <BoxAd
                             content={{title: 'Gaming 4k', offer: <span>Desktop &<br /> Labtops <br /> SALE 20% OFF</span>} } 
                             img={<img src="src/assets/Landing/2.jpg" className='h-full w-full' alt="placeholder" />}
                         />
