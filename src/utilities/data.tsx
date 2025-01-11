@@ -182,6 +182,183 @@ export const ProductsSlides = [
     },
 ]
 
+export const NewArrivalsProducts = [
+    {
+        id: 6,
+        title: 'Product 6',
+        rate: 4.5,
+        src: Product6,
+        price: 100
+    },
+    {
+        id: 3,
+        title: 'Product 3',
+        rate: 4.5,
+        src: Product3,
+        price: 100
+    },
+    {
+        id: 8,
+        title: 'Product 8',
+        rate: 4.5,
+        src: Product8,
+        price: 100
+    },
+    {
+        id: 2,
+        title: 'Product 2',
+        rate: 4.5,
+        src: Product2,
+        price: 100
+    },
+    {
+        id: 5,
+        title: 'Product 5',
+        rate: 4.5,
+        src: Product5,
+        price: 100
+    },
+    {
+        id: 1,
+        title: 'Product 1',
+        rate: 4.5,
+        src: Product1,
+        price: 100
+    },
+    {
+        id: 4,
+        title: 'Product 4',
+        rate: 4.5,
+        src: Product4,
+        price: 100
+    },
+    {
+        id: 7,
+        title: 'Product 7',
+        rate: 4.5,
+        src: Product7,
+        price: 100
+    }
+];
+
+export const BestSellersProducts = [
+    {
+        id: 4,
+        title: 'Product 4',
+        rate: 4.5,
+        src: Product4,
+        price: 100
+    },
+    {
+        id: 7,
+        title: 'Product 7',
+        rate: 4.5,
+        src: Product7,
+        price: 100
+    },
+    {
+        id: 1,
+        title: 'Product 1',
+        rate: 4.5,
+        src: Product1,
+        price: 100
+    },
+    {
+        id: 5,
+        title: 'Product 5',
+        rate: 4.5,
+        src: Product5,
+        price: 100
+    },
+    {
+        id: 3,
+        title: 'Product 3',
+        rate: 4.5,
+        src: Product3,
+        price: 100
+    },
+    {
+        id: 8,
+        title: 'Product 8',
+        rate: 4.5,
+        src: Product8,
+        price: 100
+    },
+    {
+        id: 2,
+        title: 'Product 2',
+        rate: 4.5,
+        src: Product2,
+        price: 100
+    },
+    {
+        id: 6,
+        title: 'Product 6',
+        rate: 4.5,
+        src: Product6,
+        price: 100
+    }
+];
+
+export const MostPopulerProducts = [
+    {
+        id: 2,
+        title: 'Product 2',
+        rate: 4.5,
+        src: Product2,
+        price: 100
+    },
+    {
+        id: 6,
+        title: 'Product 6',
+        rate: 4.5,
+        src: Product6,
+        price: 100
+    },
+    {
+        id: 5,
+        title: 'Product 5',
+        rate: 4.5,
+        src: Product5,
+        price: 100
+    },
+    {
+        id: 8,
+        title: 'Product 8',
+        rate: 4.5,
+        src: Product8,
+        price: 100
+    },
+    {
+        id: 1,
+        title: 'Product 1',
+        rate: 4.5,
+        src: Product1,
+        price: 100
+    },
+    {
+        id: 7,
+        title: 'Product 7',
+        rate: 4.5,
+        src: Product7,
+        price: 100
+    },
+    {
+        id: 3,
+        title: 'Product 3',
+        rate: 4.5,
+        src: Product3,
+        price: 100
+    },
+    {
+        id: 4,
+        title: 'Product 4',
+        rate: 4.5,
+        src: Product4,
+        price: 100
+    }
+];
+
 export const ElectronicsSection = {
     title: 'Electronics',
     navs: [

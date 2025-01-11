@@ -15,6 +15,4 @@ function DealsOfTheDay() {
     )
 }
 
-
-
 export default DealsOfTheDay

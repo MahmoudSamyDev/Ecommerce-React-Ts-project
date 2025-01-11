@@ -6,9 +6,9 @@ function ProductsSection({category, navTitle, id}: {category: any, navTitle: str
     return (
         <div className="deals-of-the-day w-full content-center py-[15px]">
             <ContainerWrapper>
-                <div className="w-full flex gap-10">
+                <div className="w-full flex flex-wrap justify-between">
                     <CategoryNavigation category={category} navTitle={navTitle}/>
-                    <div className='w-[70%]'>
+                    <div className='w-full md:w-[70%]'>
                         <ProductsSlider id={id} slides={4}/>
                     </div>
                 </div>
@@ -19,7 +19,7 @@ function ProductsSection({category, navTitle, id}: {category: any, navTitle: str
 
 function CategoryNavigation({category, navTitle}: {category: any, navTitle: string}) {
     return (
-        <div className="category-navigation bg-white w-[30%] p-[15px] my-auto p-[25px] rounded-[14px]">
+        <div className="category-navigation bg-white w-full md:w-[25%] p-[15px] my-auto p-[25px] rounded-[14px]">
             <span className='font-bold block text-[20px]'>{navTitle}</span>
             <div className='navs'>
                 {

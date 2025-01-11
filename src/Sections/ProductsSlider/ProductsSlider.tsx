@@ -10,12 +10,20 @@ import '../../SwiperStyleSheets/pagination.css';
 import '../../SwiperStyleSheets/swiper.css';
 import 'swiper/swiper-bundle.css';
 
+interface ProductCard_TP {
+    id: number,
+    src: string,
+    title: string,
+    price: number,
+    rate: number,
+}
 
 // Import necessary modules from Swiper
 import { Pagination, Navigation } from 'swiper/modules';
 
-function ProductsSlider({slides, id} : {slides: number, id: string}) {
+function ProductsSlider({slides, id, cards} : {slides: number, id: string, cards?: any}) {
     const swiperRef = useRef(null);
+    const renderedSlides = cards ? cards : ProductsSlides;
 
     return (
         <div className='w-full bg-background my-[20px] relative'>
@@ -55,7 +63,7 @@ function ProductsSlider({slides, id} : {slides: number, id: string}) {
                 }}
             >
                 {
-                    ProductsSlides?.map((product) => (
+                    renderedSlides?.map((product: ProductCard_TP) => (
                         <SwiperSlide key={product.id} style={{borderRadius: '14px'}}>
                             <ProductCard product={product} />
                         </SwiperSlide>
