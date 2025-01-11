@@ -181,3 +181,41 @@ export const ProductsSlides = [
         price: 100
     },
 ]
+
+export const ElectronicsSection = {
+    title: 'Electronics',
+    navs: [
+        {
+            id: 1,
+            title: 'Wireless Speaker',
+        },
+        {
+            id: 2,
+            title: 'Tablet',
+        },
+        {
+            id: 3,
+            title: 'Smartphone',
+        },
+        {
+            id: 4,
+            title: 'Laptop',
+        },
+        {
+            id: 5,
+            title: 'iMac',
+        },
+        {
+            id: 6,
+            title: 'Game Controller',
+        },
+        {
+            id: 7,
+            title: 'Drone',
+        },
+        {
+            id: 8,
+            title: 'Apple',
+        },
+    ]
+}
