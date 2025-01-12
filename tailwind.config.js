@@ -8,8 +8,11 @@ export default {
     extend: {
       colors: {
         background: '#f8f8f8',
-        darkBlue: '#2b3445',
-      }
+        darkBlue: '#242b3a',
+      },
+      fontFamily: {
+        playWrite: [' "Playwrite AU SA"'],
+      },
     },
   },
   plugins: [],
