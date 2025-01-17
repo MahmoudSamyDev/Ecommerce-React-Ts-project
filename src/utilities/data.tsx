@@ -126,58 +126,58 @@ export const Products = [
 export const ProductsSlides = [
     {
         id: 1,
-        title: 'Product 1',
+        name: 'Product 1',
         rate: 4.5,
-        src: Product1,
+        image: Product1,
         price: 100
     },
     {
         id: 2,
-        title: 'Product 2',
+        name: 'Product 2',
         rate: 4.5,
-        src: Product2,
+        image: Product2,
         price: 100
     },
     {
         id: 3,
-        title: 'Product 3',
+        name: 'Product 3',
         rate: 4.5,
-        src: Product3,
+        image: Product3,
         price: 100
     },
     {
         id: 4,
-        title: 'Product 4',
+        name: 'Product 4',
         rate: 4.5,
-        src: Product4,
+        image: Product4,
         price: 100
     },
     {
         id: 5,
-        title: 'Product 5',
+        name: 'Product 5',
         rate: 4.5,
-        src: Product5,
+        image: Product5,
         price: 100
     },
     {
         id: 6,
-        title: 'Product 6',
+        name: 'Product 6',
         rate: 4.5,
-        src: Product6,
+        image: Product6,
         price: 100
     },
     {
         id: 7,
-        title: 'Product 7',
+        name: 'Product 7',
         rate: 4.5,
-        src: Product7,
+        image: Product7,
         price: 100
     },
     {
         id: 8,
-        title: 'Product 8',
+        name: 'Product 8',
         rate: 4.5,
-        src: Product8,
+        image: Product8,
         price: 100
     },
 ]
@@ -185,58 +185,58 @@ export const ProductsSlides = [
 export const NewArrivalsProducts = [
     {
         id: 6,
-        title: 'Product 6',
+        name: 'Product 6',
         rate: 4.5,
-        src: Product6,
+        image: Product6,
         price: 100
     },
     {
         id: 3,
-        title: 'Product 3',
+        name: 'Product 3',
         rate: 4.5,
-        src: Product3,
+        image: Product3,
         price: 100
     },
     {
         id: 8,
-        title: 'Product 8',
+        name: 'Product 8',
         rate: 4.5,
-        src: Product8,
+        image: Product8,
         price: 100
     },
     {
         id: 2,
-        title: 'Product 2',
+        name: 'Product 2',
         rate: 4.5,
-        src: Product2,
+        image: Product2,
         price: 100
     },
     {
         id: 5,
-        title: 'Product 5',
+        name: 'Product 5',
         rate: 4.5,
-        src: Product5,
+        image: Product5,
         price: 100
     },
     {
         id: 1,
-        title: 'Product 1',
+        name: 'Product 1',
         rate: 4.5,
-        src: Product1,
+        image: Product1,
         price: 100
     },
     {
         id: 4,
-        title: 'Product 4',
+        name: 'Product 4',
         rate: 4.5,
-        src: Product4,
+        image: Product4,
         price: 100
     },
     {
         id: 7,
-        title: 'Product 7',
+        name: 'Product 7',
         rate: 4.5,
-        src: Product7,
+        image: Product7,
         price: 100
     }
 ];
@@ -244,58 +244,58 @@ export const NewArrivalsProducts = [
 export const BestSellersProducts = [
     {
         id: 4,
-        title: 'Product 4',
+        name: 'Product 4',
         rate: 4.5,
-        src: Product4,
+        image: Product4,
         price: 100
     },
     {
         id: 7,
-        title: 'Product 7',
+        name: 'Product 7',
         rate: 4.5,
-        src: Product7,
+        image: Product7,
         price: 100
     },
     {
         id: 1,
-        title: 'Product 1',
+        name: 'Product 1',
         rate: 4.5,
-        src: Product1,
+        image: Product1,
         price: 100
     },
     {
         id: 5,
-        title: 'Product 5',
+        name: 'Product 5',
         rate: 4.5,
-        src: Product5,
+        image: Product5,
         price: 100
     },
     {
         id: 3,
-        title: 'Product 3',
+        name: 'Product 3',
         rate: 4.5,
-        src: Product3,
+        image: Product3,
         price: 100
     },
     {
         id: 8,
-        title: 'Product 8',
+        name: 'Product 8',
         rate: 4.5,
-        src: Product8,
+        image: Product8,
         price: 100
     },
     {
         id: 2,
-        title: 'Product 2',
+        name: 'Product 2',
         rate: 4.5,
-        src: Product2,
+        image: Product2,
         price: 100
     },
     {
         id: 6,
-        title: 'Product 6',
+        name: 'Product 6',
         rate: 4.5,
-        src: Product6,
+        image: Product6,
         price: 100
     }
 ];
@@ -303,58 +303,58 @@ export const BestSellersProducts = [
 export const MostPopulerProducts = [
     {
         id: 2,
-        title: 'Product 2',
+        name: 'Product 2',
         rate: 4.5,
-        src: Product2,
+        image: Product2,
         price: 100
     },
     {
         id: 6,
-        title: 'Product 6',
+        name: 'Product 6',
         rate: 4.5,
-        src: Product6,
+        image: Product6,
         price: 100
     },
     {
         id: 5,
-        title: 'Product 5',
+        name: 'Product 5',
         rate: 4.5,
-        src: Product5,
+        image: Product5,
         price: 100
     },
     {
         id: 8,
-        title: 'Product 8',
+        name: 'Product 8',
         rate: 4.5,
-        src: Product8,
+        image: Product8,
         price: 100
     },
     {
         id: 1,
-        title: 'Product 1',
+        name: 'Product 1',
         rate: 4.5,
-        src: Product1,
+        image: Product1,
         price: 100
     },
     {
         id: 7,
-        title: 'Product 7',
+        name: 'Product 7',
         rate: 4.5,
-        src: Product7,
+        image: Product7,
         price: 100
     },
     {
         id: 3,
-        title: 'Product 3',
+        name: 'Product 3',
         rate: 4.5,
-        src: Product3,
+        image: Product3,
         price: 100
     },
     {
         id: 4,
-        title: 'Product 4',
+        name: 'Product 4',
         rate: 4.5,
-        src: Product4,
+        image: Product4,
         price: 100
     }
 ];

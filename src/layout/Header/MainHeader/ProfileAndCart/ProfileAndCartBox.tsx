@@ -1,7 +1,6 @@
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import Button from '@mui/material/Button';
-import Badge from '@mui/material/Badge';
+import CartSideBar from './CartSideBar';
 
 const buttomStyle = {
     padding: 0,
@@ -28,9 +27,7 @@ function ProfileAndCartBox() {
                 variant="text"
                 sx={buttomStyle}
             >
-                <Badge badgeContent={4} color="primary">
-                    <ShoppingCartOutlinedIcon sx={{ color: '#2b3445', cursor: 'pointer' }} />
-                </Badge>
+                <CartSideBar />
             </Button>
         </div>
     );

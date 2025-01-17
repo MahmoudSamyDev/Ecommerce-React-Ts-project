@@ -1,7 +1,14 @@
 export interface ProductCard_TP {
     id: number;
-    title: string;
+    name: string;
     rate: number;
     price: number;
-    src: string;
+    image: string;
+}
+export interface CartProduct_TP {
+    id: number,
+    name: string,
+    price: number,
+    image: string,
+    quantity: number,
 }

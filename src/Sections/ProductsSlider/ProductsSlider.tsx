@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import ProductCard from '../../layout/Components/ProductCard';
 import { ProductsSlides } from '../../utilities/data';
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
+import { ProductCard_TP } from '../../Types';
 
 // Import Swiper styles
 import '../../SwiperStyleSheets/styles.css';
@@ -10,13 +11,6 @@ import '../../SwiperStyleSheets/pagination.css';
 import '../../SwiperStyleSheets/swiper.css';
 import 'swiper/swiper-bundle.css';
 
-interface ProductCard_TP {
-    id: number,
-    src: string,
-    title: string,
-    price: number,
-    rate: number,
-}
 
 // Import necessary modules from Swiper
 import { Pagination, Navigation } from 'swiper/modules';
