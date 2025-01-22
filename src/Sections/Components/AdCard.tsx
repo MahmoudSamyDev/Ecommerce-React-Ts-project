@@ -5,7 +5,7 @@ function AdCard({imgSrc, title, disc, sale, color}: {imgSrc: string, title: stri
     return (
         <div className='w-full rounded-[14px] overflow-hidden relative'>
             <div className={`absolute top-[50%] transform translate-y-[-50%] left-[8%] text-${color}`}>
-                <h3>{title}</h3>
+                <h3 className='hidden lg:block'>{title}</h3>
                 <div className='my-[10px]'>
                     <p className='font-bold'>{disc}</p>
                     <span className='block'>{sale}</span>

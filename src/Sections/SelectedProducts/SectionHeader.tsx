@@ -29,8 +29,8 @@ function SectionHeader({ title, setSelectedProducts, active, setActive }: { titl
     };
 
     return (
-        <div className="flex justify-between items-center">
-            <div>
+        <div className="flex justify-between items-center flex-col gap-[10px] md:flex-row md:gap-[0]">
+            <div className='description text-center md:text-left'>
                 <h2 className="text-[20px]">{title}</h2>
                 <p>All our new arrivals in an exclusive brand selection</p>
             </div>

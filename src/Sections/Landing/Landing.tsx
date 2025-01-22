@@ -7,9 +7,9 @@ function Landing() {
     return (
         <div className="main-header-container w-full content-center py-[15px]">
             <ContainerWrapper>
-                <div className="flex flex-col lg:flex-row gap-4 justify-between min-h-[fit-content] h-[490px] max-h-[fit-content]">
+                <div className="flex flex-col md:flex-row gap-4 justify-between min-h-[fit-content] h-[490px] max-h-[fit-content]">
                     <SliderAds />
-                    <Box sx={{flexDirection: {xs: 'row', md: 'column'}, display:'flex', gap: '10px', justifyContent: 'space-between'}}>
+                    <Box sx={{flexDirection: 'column', display:'flex', gap: '10px', justifyContent: 'space-between'}}>
                         <BoxAd 
                             content={{title: 'New Arrivals', offer: <span>Summer<br /> SALE 20% OFF</span>} } 
                             img={<img src="src/assets/Landing/3.jpg" className='h-full w-full' alt="placeholder" />}

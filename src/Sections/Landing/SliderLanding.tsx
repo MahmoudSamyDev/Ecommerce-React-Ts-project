@@ -24,19 +24,19 @@ function SliderAds() {
           <SwiperSlide>
             <SlideObj
               gender='MEN'
-              img={<img src="src/assets/Landing/1.jpg" className='h-[100%] w-[100%]' alt="Men Photo" />}
+              img={<img src="src/assets/Landing/1.jpg" className='h-[100%] w-[100%] hidden' alt="Men Photo" />}
             />
           </SwiperSlide>
           <SwiperSlide>
             <SlideObj
               gender='WOMEN'
-              img={<img src="src/assets/Landing/4.jpg" className='h-[100%] w-[100%]' alt="Women Photo" />}
+              img={<img src="src/assets/Landing/4.jpg" className='h-[100%] w-[100%] hidden' alt="Women Photo" />}
             />
           </SwiperSlide>
           <SwiperSlide>
             <SlideObj
               gender='kids'
-              img={<img src="src/assets/Landing/1.jpg" className='h-[100%] w-[100%]' alt="Kid Photo" />}
+              img={<img src="src/assets/Landing/1.jpg" className='h-[100%] w-[100%] hidden' alt="Kid Photo" />}
             />
           </SwiperSlide>
         </Swiper>
