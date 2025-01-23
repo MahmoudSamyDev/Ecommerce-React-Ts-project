@@ -7,6 +7,7 @@ import IconButton from '@mui/material/IconButton';
 import { useState } from 'react';
 import { useCart, useOpenSideCart } from '../../hooks';
 import SpinnerLoader from '../../utilities/Loaders/SpinnerLoader/SpinnerLoader';
+import { Link } from 'react-router-dom';
 
 function ProductCard({ product }: { product: ProductCard_TP }) {
     const [isFavorite, setIsFavorite] = useState(false);
@@ -31,12 +32,20 @@ function ProductCard({ product }: { product: ProductCard_TP }) {
     }
     return (
         <div className="product-card rounded-[14px] overflow-hidden group cursor-pointer duration-300 border hover:border-black relative">
-            <img src={product.image} alt={product.name} className="h-auto w-full duration-300 group-hover:scale-105"/>
-            <h3>{product.name}</h3>
-            <p>{product.price}$</p>
-            <span className="flex items-center justify-center">
-                <Rating name="read-only" sx={{fontSize: '16px'}} value={product.rate} readOnly /> <span className="text-[grey] text-[14px]">(0)</span>
-            </span>
+            <Link to='/product'>
+                <img src={product.image} alt={product.name} className="h-auto w-full duration-300 group-hover:scale-105"/>
+            </Link>
+            <Link to='/product'>
+                <h3>{product.name}</h3>
+            </Link>
+            <Link to='/product'>
+                <p>{product.price}$</p>
+            </Link>
+            <Link to='/product'>
+                <span className="flex items-center justify-center">
+                    <Rating name="read-only" sx={{fontSize: '16px'}} value={product.rate} readOnly /> <span className="text-[grey] text-[14px]">(0)</span>
+                </span>
+            </Link>
             <button
                 className='w-[90%] h-[35px] block flex justify-center items-center mx-auto rounded-[12px] my-[15px] p-[5px] duration-[0.3s] hover:bg-[#eaeaea] border border-[#999999]'
                 onClick={addingToCart}
@@ -45,9 +54,11 @@ function ProductCard({ product }: { product: ProductCard_TP }) {
                 {isInCart.loading && <span className='w-full h-full flex justify-center items-center'><SpinnerLoader /></span>}
             </button>
             <div className='product-options absolute top-0 right-[-100px] flex flex-col items-center justify-center gap-[10px] p-[10px] duration-300 group-hover:right-0'>
-                <IconButton aria-label="add to favorites">
-                    <VisibilityIcon />
-                </IconButton>
+                <Link to='/product'>
+                    <IconButton aria-label="add to favorites">
+                        <VisibilityIcon />
+                    </IconButton>
+                </Link>
                 <IconButton aria-label="add to favorites" onClick={handleFavorite}>
                     {isFavorite ? <FavoriteIcon /> : <FavoriteBorderIcon />}
                 </IconButton>

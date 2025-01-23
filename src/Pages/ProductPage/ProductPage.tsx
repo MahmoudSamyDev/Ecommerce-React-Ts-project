@@ -7,7 +7,7 @@ import RelatedProducts from './RelatedProducts/RelatedProducts';
 
 function ProductPage() {
     return (
-        <div className="product-page-container w-full content-center py-[15px]">
+        <div className="product-page-container w-full content-center py-[15px] bg-background">
             <ContainerWrapper>
                 <ProductInfo />
                 <DescriptionAndReviewsNav />
