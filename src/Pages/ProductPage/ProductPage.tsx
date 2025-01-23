@@ -1,6 +1,6 @@
 import ContainerWrapper from '../../layout/Components/ContainerWrapper';
 import ProductInfo from './ProductInfo/ProductInfo';
-import DescriptionAndReviewsNav from './DescriptionAndReviewsNav';
+import DescriptionAndReviewsNav from './DescriptionAndReviewSection/DescriptionAndReviewSection';
 import FrequentlyBought from './FrequentlyBought/FrequentlyBought';
 import OtherStoresRelated from './OtherStoresRelated/OtherStoresRelated';
 import RelatedProducts from './RelatedProducts/RelatedProducts';
