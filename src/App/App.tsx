@@ -12,6 +12,8 @@ interface CartContextType {
 interface CartSideBarOpenContextType {
   openSideCart: boolean;
   setOpenSideCart: React.Dispatch<React.SetStateAction<boolean>>;
+  totalCartPrice: number;
+  setTotalCartPrice: React.Dispatch<React.SetStateAction<number>>;
 }
 
 export const CartContext = createContext<CartContextType | undefined>(undefined);
@@ -20,8 +22,11 @@ export const CartSideBarOpen = createContext<CartSideBarOpenContextType | undefi
 function App() {
   const [productsInCart, setProductsInCart] = useState<CartProduct_TP[]>([]);
   const [openSideCart, setOpenSideCart] = useState(false);
+  const totalprice = productsInCart?.reduce((acc, product) => acc + product.price, 0);
+  const [totalCartPrice, setTotalCartPrice] = useState(totalprice);
+
   return (
-    <CartSideBarOpen.Provider value={{ openSideCart, setOpenSideCart }}>
+    <CartSideBarOpen.Provider value={{ openSideCart, setOpenSideCart, totalCartPrice, setTotalCartPrice }}>
       <CartContext.Provider value={{ productsInCart, setProductsInCart }}>
         <div className="App">
           <BrowserRouter>

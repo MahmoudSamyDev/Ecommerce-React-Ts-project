@@ -1,8 +1,11 @@
 import { useState } from 'react';
 import Rating from '@mui/material/Rating';
+// import { useCart, useOpenSideCart } from '../../../hooks';
 
 
 function ProductDetailsSection() {
+    // const { setProductsInCart } = useCart();
+    // const { setOpenSideCart } = useOpenSideCart();
     const [selectedOption, setSelectedOption] = useState("");
     const [selectedType, setSelectedTyoe] = useState("");
 
@@ -12,6 +15,15 @@ function ProductDetailsSection() {
     const handleSelectType = (option: any) => {
         setSelectedTyoe(option);
     };
+    function addProductToCart() {
+        console.log(`Product Added to Cart`);
+        // setProductsInCart((prev: any) => {
+        //     const updatedProducts = new Set([...prev, {}]);
+        //     console.log( Array.from(updatedProducts))
+        //     return Array.from(updatedProducts);
+        // });
+        // setOpenSideCart(true);
+    }
 
     return (
         <section className='product-info w-full md:w-[47%] flex flex-col gap-[20px]'>
@@ -60,7 +72,10 @@ function ProductDetailsSection() {
                 <span className='block text-[13px]'>Stock Available</span>
             </div>
 
-            <button className='bg-[#ac0000] w-[150px] py-[10px] rounded-[10px] text-white text-[15px] transition ease-in-out duration-300 hover:bg-[#cb0000] my-[25px]'>
+            <button
+                className='bg-[#ac0000] hover:bg-officialRed duration-300 w-[150px] py-[10px] rounded-[10px] text-white text-[15px] transition ease-in-out duration-300 hover:bg-[#cb0000] my-[25px]'
+                onClick={addProductToCart}
+            >
                 Add to Cart
             </button>
 

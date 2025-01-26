@@ -10,9 +10,8 @@ import { useCart, useOpenSideCart } from '../../../../hooks';
 
 
 function CartSideBar() {
-    const { openSideCart, setOpenSideCart } = useOpenSideCart()
+    const { openSideCart, setOpenSideCart, totalCartPrice } = useOpenSideCart()
     const { productsInCart } = useCart();
-    const totalprice = productsInCart?.reduce((acc, product) => acc + product.price, 0);
     const toggleDrawer = (openSideCart: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
         if (
             event.type === 'keydown' &&
@@ -46,7 +45,7 @@ function CartSideBar() {
                 }
             </body>
             <footer className="p-4 h-[10%]">
-                <button className="font-bold bg-darkBlue text-white text-center w-full p-[8px] rounded ease-in-out duration-300 hover:bg-darkBlueHover mb-[10px]">Checkout Now {totalprice}$</button>
+                <button className="font-bold bg-darkBlue text-white text-center w-full p-[8px] rounded ease-in-out duration-300 hover:bg-darkBlueHover mb-[10px]">Checkout Now {totalCartPrice}$</button>
                 <button className="text-[red] text-center w-full p-[8px] border border-[red] rounded">View Cart</button>
             </footer>
         </Box>

@@ -13,7 +13,7 @@ function ProductCard({ product }: { product: ProductCard_TP }) {
     const [isFavorite, setIsFavorite] = useState(false);
     const [isInCart, setIsInCart] = useState({status: true, loading: false});
     const { setProductsInCart } = useCart();
-    const { setOpenSideCart } = useOpenSideCart()
+    const { setOpenSideCart, setTotalCartPrice } = useOpenSideCart()
 
     function handleFavorite() {
         setIsFavorite(!isFavorite);
@@ -24,6 +24,7 @@ function ProductCard({ product }: { product: ProductCard_TP }) {
             const updatedProducts = new Set([...prev, product]);
             return Array.from(updatedProducts);
         });
+        setTotalCartPrice((prev: any) => prev + product.price);
         setIsInCart({status: false, loading: true});
         setTimeout(() => {
             setIsInCart({status: true, loading: false});
@@ -50,7 +51,7 @@ function ProductCard({ product }: { product: ProductCard_TP }) {
                 className='w-[90%] h-[35px] block flex justify-center items-center mx-auto rounded-[12px] my-[15px] p-[5px] duration-[0.3s] hover:bg-[#eaeaea] border border-[#999999]'
                 onClick={addingToCart}
             >
-                {isInCart.status && <span>Added to Cart</span>}
+                {isInCart.status && <span>Add to Cart</span>}
                 {isInCart.loading && <span className='w-full h-full flex justify-center items-center'><SpinnerLoader /></span>}
             </button>
             <div className='product-options absolute top-0 right-[-100px] flex flex-col items-center justify-center gap-[10px] p-[10px] duration-300 group-hover:right-0'>

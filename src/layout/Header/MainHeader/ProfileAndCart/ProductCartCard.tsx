@@ -2,17 +2,31 @@ import { Box, Typography, IconButton, Avatar } from '@mui/material';
 import { Add, Remove, Close } from '@mui/icons-material';
 import { useState } from 'react';
 import { CartProduct_TP } from '../../../../Types';
-import { useCart } from '../../../../hooks';
+import { useCart, useOpenSideCart } from '../../../../hooks';
 
 
 function ProductCartCard({ product }: { product: CartProduct_TP}) {
     const [count, setCount] = useState(1);
     const { setProductsInCart } = useCart();
-    
+    const { setTotalCartPrice } = useOpenSideCart()
+
+
     const handleRemoveProduct = () => {
         setProductsInCart((prevProducts) => prevProducts.filter(p => p.id !== product.id));
+        setTotalCartPrice((prev: number) => prev - (product.price * count));
     };
 
+    function countChangeHandler(value: number, op: string) {
+        if (value < 1) {
+            return;
+        }
+        setCount(value);
+        if (op === 'add') {
+            setTotalCartPrice((prev: number) => prev + (product.price));
+            return;
+        }
+        setTotalCartPrice((prev: number) => prev - (product.price));
+    }
     return(
         <div className='products-cart'>
             <Box
@@ -26,44 +40,43 @@ function ProductCartCard({ product }: { product: CartProduct_TP}) {
                     marginBottom: 2,
                 }}
             >
-            <Avatar
-                src={product.image}
-                alt={product.name}
-                variant="square"
-                sx={{ width: 60, height: 60, marginRight: 2 }}
-            />
-            <div>
+                <Avatar
+                    src={product.image}
+                    alt={product.name}
+                    variant="square"
+                    sx={{ width: 60, height: 60, marginRight: 2 }}
+                />
                 <div>
-                    <Typography variant="body2" sx={{ fontWeight: 'bold' }}>
-                        {product.name}
-                    </Typography>
-                    <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                        {product.price} $
-                    </Typography>
+                    <div>
+                        <Typography variant="body2" sx={{ fontWeight: 'bold', width: '100%' }}>
+                            {product.name}
+                        </Typography>
+                        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                            {product.price} $
+                        </Typography>
+                    </div>
+                    <div className='flex items-center'>
+                        <IconButton
+                            onClick={() => countChangeHandler(count - 1, 'remove')}
+                            size="small"
+                        >
+                            <Remove />
+                        </IconButton>
+                        <Typography variant="body2" sx={{ margin: '0 8px' }}>
+                            {count}
+                        </Typography>
+                        <IconButton
+                            onClick={() => countChangeHandler(count + 1, 'add')}
+                            size="small"
+                        >
+                            <Add />
+                        </IconButton>
+                    </div>
                 </div>
-                <div className='flex items-center'>
-                    <IconButton
-                        onClick={() => setCount(count - 1)}
-                        size="small"
-                        sx={{ marginLeft: 'auto' }}
-                    >
-                        <Remove />
-                    </IconButton>
-                    <Typography variant="body2" sx={{ margin: '0 8px' }}>
-                        {count}
-                    </Typography>
-                    <IconButton
-                        onClick={() => setCount(count + 1)}
-                        size="small"
-                    >
-                        <Add />
-                    </IconButton>
-                </div>
-            </div>
-            <IconButton onClick={handleRemoveProduct} size="small" sx={{ marginLeft: 'auto' }}>
-                <Close />
-            </IconButton>
-        </Box>
+                <IconButton onClick={handleRemoveProduct} size="small" sx={{ marginLeft: 'auto' }}>
+                    <Close />
+                </IconButton>
+            </Box>
         </div>
     )
 }

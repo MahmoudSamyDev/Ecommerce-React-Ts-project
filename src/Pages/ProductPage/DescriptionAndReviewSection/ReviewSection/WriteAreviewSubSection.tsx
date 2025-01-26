@@ -33,7 +33,7 @@ function WriteAreviewSubSection() {
                         onChange={(e) => setReviewInput(e.target.value)}
                     ></textarea>
                     <button
-                        className='w-[fit-content] px-[15px] text-[15px] h-[40px] bg-officialRed text-[white] rounded-[12px] mt-[10px]'
+                        className='w-[fit-content] px-[15px] text-[15px] h-[40px] bg-[#ac0000] hover:bg-officialRed duration-300 text-[white] rounded-[12px] mt-[10px]'
                     >
                         Submit
                     </button>
