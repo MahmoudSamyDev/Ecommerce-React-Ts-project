@@ -27,7 +27,17 @@ function CustomTabPanel(props: TabPanelProps) {
 function DescriptionSection({ value }: { value: number }) {
     return (
         <CustomTabPanel value={value} index={0}>
-            Description
+            <div className='specifications'>
+                <h2 className='mb-[10px] font-bold text-xl'>Specifications:</h2>
+                <div className='specifications-details flex flex-col gap-[5px]'>
+                    <span>Brand: Beats</span>
+                    <span>Model: S450</span>
+                    <span>Wireless Bluetooth Headset</span>
+                    <span>FM Frequency Response: 87.5 – 108 MHz</span>
+                    <span>Feature: FM Radio, Card Supported (Micro SD / TF)</span>
+                    <span>Made in China</span>
+                </div>
+            </div>
         </CustomTabPanel>
     )
 }

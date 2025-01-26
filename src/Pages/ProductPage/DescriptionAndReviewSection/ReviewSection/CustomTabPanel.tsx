@@ -1,5 +1,6 @@
 import Box from '@mui/material/Box';
 
+
 interface TabPanelProps {
     children?: React.ReactNode;
     index: number;
@@ -22,13 +23,4 @@ function CustomTabPanel(props: TabPanelProps) {
     );
 }
 
-
-function ReviewsSection({ value }: { value: number }) {
-    return (
-        <CustomTabPanel value={value} index={1}>
-            Reviews
-        </CustomTabPanel>
-    )
-}
-
-export default ReviewsSection
+export default CustomTabPanel

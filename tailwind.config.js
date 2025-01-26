@@ -10,6 +10,7 @@ export default {
         background: '#f8f8f8',
         darkBlue: '#242b3a',
         darkBlueHover: '#464d5d',
+        officialRed: '#c50f1e'
       },
       fontFamily: {
         playWrite: [' "Playwrite AU SA"'],
