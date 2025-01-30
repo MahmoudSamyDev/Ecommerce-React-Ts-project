@@ -52,7 +52,7 @@ function FrequentlyBought() {
         setOpenSideCart(true);
     }
     return (
-        <div className='py-[15px] h-[fit-content]'>
+        <div className='py-[15px] h-[fit-content] my-[40px]'>
             <h1 className='text-[20px] font-bold'>Frequently Bought Together</h1>
             <div className='recommended-products flex flex-wrap items-center lg:flex-row gap-[20px] mt-[20px] min-h-[290px] max-h-[fit-content]'>
                 <RecommendedProduct product={RecommendedProducts[0]}/>
