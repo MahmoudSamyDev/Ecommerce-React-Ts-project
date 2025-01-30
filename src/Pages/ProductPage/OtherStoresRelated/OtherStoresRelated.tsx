@@ -1,5 +1,4 @@
 import RelatedStore from './RelatedStore';
-
 import StoreOne from '../../../assets/RecommendedStores/StoreOne.webp';
 import StoreTwo from '../../../assets/RecommendedStores/StoreTwo.webp';
 import StoreThree from '../../../assets/RecommendedStores/StoreThree.webp';

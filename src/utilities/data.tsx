@@ -3,6 +3,10 @@ import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined
 import CurrencyExchangeOutlinedIcon from '@mui/icons-material/CurrencyExchangeOutlined';
 import TimerOutlinedIcon from '@mui/icons-material/TimerOutlined';
 import CreditScoreOutlinedIcon from '@mui/icons-material/CreditScoreOutlined';
+import ProductOne from '../assets/RecommendedProducts/RelatedProductOne.webp';
+import ProductTwo from '../assets/RecommendedProducts/RelatedProductTwo.webp';
+import ProductThree from '../assets/RecommendedProducts/RelatedProductThree.webp';
+import ProductFour from '../assets/RecommendedProducts/RelatedProductFour.webp';
 
 // Images for products cards
 import Product1 from '../assets//ProductsSlides/Product-1.webp';
@@ -396,3 +400,34 @@ export const ElectronicsSection = {
         },
     ]
 }
+
+export const recommendedProducts = [
+    {
+        id: 1,
+        name: 'Colgate Advance Protection Toothpaste',
+        price: 1000,
+        image: ProductOne,
+        rate: 5,
+    },
+    {
+        id: 2,
+        name: 'Catch Sprinklers Chat Masala',
+        price: 2000,
+        image: ProductTwo,
+        rate: 5,
+    },
+    {
+        id: 3,
+        name: 'Catch Italian Seasoning Grinder',
+        price: 3000,
+        image: ProductThree,
+        rate: 5,
+    },
+    {
+        id: 4,
+        name: 'Tadka Garam Masala',
+        price: 4000,
+        image: ProductFour,
+        rate: 5,
+    },
+]

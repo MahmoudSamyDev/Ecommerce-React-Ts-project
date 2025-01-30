@@ -3,7 +3,7 @@ import appStore from '../../assets/footer/appStore.png';
 
 function FooterDescSection() {
     return (
-        <section className='site-desc w-full md:w-[30%] h-[200px] flex flex-col justify-between items-start gap-4 py-[20px] md:p-0'>
+        <section className='site-desc w-full md:w-[30%] h-[200px] flex flex-col justify-between items-start gap-4 py-[20px] md:p-0 mb-[40px] md:m-0'>
             <div className="logo text-white text-xl font-bold font-playWrite text-left">
                 React E-commerce <br /> Template
             </div>

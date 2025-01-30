@@ -1,16 +1,16 @@
-import { ProductCard_TP } from "../../../Types";
+import { ProductCard_TP } from "../../Types";
 import Rating from '@mui/material/Rating';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import IconButton from '@mui/material/IconButton';
 import { useState } from 'react';
-import { useCart, useOpenSideCart } from '../../../hooks';
-import SpinnerLoader from '../../../utilities/Loaders/SpinnerLoader/SpinnerLoader';
+import { useCart, useOpenSideCart } from '../../hooks';
+import SpinnerLoader from '../../utilities/Loaders/SpinnerLoader/SpinnerLoader';
 import { Link } from 'react-router-dom';
 import AddIcon from '@mui/icons-material/Add';
 
-function RelatedProduct({ product }: { product: ProductCard_TP }) {
+function StoreProduct({ product }: { product: ProductCard_TP }) {
     const [isFavorite, setIsFavorite] = useState(false);
     const [isInCart, setIsInCart] = useState({status: true, loading: false});
     const { setProductsInCart } = useCart();
@@ -34,7 +34,7 @@ function RelatedProduct({ product }: { product: ProductCard_TP }) {
     }
 
     return (
-        <div className="related-product rounded-[14px] overflow-hidden group cursor-pointer duration-300 border relative bg-white w-full md:w-[200px] lg:grow h-full ">
+        <div className="related-product rounded-[14px] overflow-hidden group cursor-pointer duration-300 border relative bg-background h-[fit-content]">
             <div className='discount-container text-left p-[10px]'>
                 <span className='text-white text-[10px] p-[4px] font-bold rounded-[4px] bg-officialRed'>20% off</span>
             </div>
@@ -43,7 +43,7 @@ function RelatedProduct({ product }: { product: ProductCard_TP }) {
                     <img src={product.image} alt={product.name} className="h-auto w-full duration-300 group-hover:scale-105"/>
                 </Link>
             </div>
-            <div className='flex flex-col gap-[5px] p-[10px] w-[90%]'>
+            <div className='flex flex-col gap-[5px] p-[10px] w-full'>
                 <Link to='/product'>
                     <h3 className='truncate'>{product.name}</h3>
                 </Link>
@@ -79,4 +79,4 @@ function RelatedProduct({ product }: { product: ProductCard_TP }) {
     );
 }
 
-export default RelatedProduct;
+export default StoreProduct;

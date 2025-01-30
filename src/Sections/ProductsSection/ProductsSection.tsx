@@ -4,7 +4,7 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 function ProductsSection({category, navTitle, id}: {category: any, navTitle: string, id: string}) {
     return (
-        <div className="deals-of-the-day w-full content-center py-[15px]">
+        <div className="w-full content-center py-[15px]">
             <ContainerWrapper>
                 <div className="w-full flex flex-wrap justify-between">
                     <CategoryNavigation category={category} navTitle={navTitle}/>
