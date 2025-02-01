@@ -18,6 +18,17 @@ import Product6 from '../assets//ProductsSlides/Product-6.webp';
 import Product7 from '../assets//ProductsSlides/Product-7.webp';
 import Product8 from '../assets//ProductsSlides/Product-8.webp';
 
+// Images for Store cards
+import P1 from '../assets/StoreProducts/P1.webp';
+import P2 from '../assets/StoreProducts/P2.webp';
+import P3 from '../assets/StoreProducts/P3.webp';
+import P4 from '../assets/StoreProducts/P4.webp';
+import P5 from '../assets/StoreProducts/P5.webp';
+import P6 from '../assets/StoreProducts/P6.webp';
+import P7 from '../assets/StoreProducts/P7.webp';
+import P8 from '../assets/StoreProducts/P8.webp';
+import P9 from '../assets/StoreProducts/P8.webp';
+
 // Navigation Bar data
 export const HomeNavigations = [
     {
@@ -429,5 +440,71 @@ export const recommendedProducts = [
         price: 4000,
         image: ProductFour,
         rate: 5,
+    },
+]
+
+export const StoreProductsCards = [
+    {
+        id: 1,
+        name: 'Lord 2019',
+        price: 1000,
+        image: P1,
+        rate: 4,
+    },
+    {
+        id: 2,
+        name: 'Resla 2015',
+        price: 2000,
+        image: P2,
+        rate: 3,
+    },
+    {
+        id: 3,
+        name: 'Budi 2019',
+        price: 3000,
+        image: P3,
+        rate: 5,
+    },
+    {
+        id: 4,
+        name: 'Hundai 2020',
+        price: 4000,
+        image: P4,
+        rate: 1,
+    },
+    {
+        id: 5,
+        name: 'Lord 2011',
+        price: 4000,
+        image: P5,
+        rate: 4,
+    },
+    {
+        id: 6,
+        name: 'Ninga Kawasaki 2016',
+        price: 4000,
+        image: P6,
+        rate: 3,
+    },
+    {
+        id: 7,
+        name: 'Tarz T3',
+        price: 4000,
+        image: P7,
+        rate: 2,
+    },
+    {
+        id: 8,
+        name: 'Xamaha R15 Black',
+        price: 4000,
+        image: P8,
+        rate: 3,
+    },
+    {
+        id: 9,
+        name: 'Lokia android one',
+        price: 4000,
+        image: P9,
+        rate: 1,
     },
 ]

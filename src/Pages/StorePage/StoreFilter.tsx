@@ -32,11 +32,12 @@ function StorePage() {
             <div className='price-range'>
                 <Box sx={{ width: '100%' }}>
                     <Slider
-                        getAriaLabel={() => 'Temperature range'}
                         value={priceValue}
                         onChange={handleChange}
                         valueLabelDisplay="auto"
                         getAriaValueText={valuetext}
+                        min={0}
+                        max={3000}
                     />
                 </Box>
                 <div className='price-range-values flex justify-between gap-[5px]'>
