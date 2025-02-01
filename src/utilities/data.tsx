@@ -19,15 +19,15 @@ import Product7 from '../assets//ProductsSlides/Product-7.webp';
 import Product8 from '../assets//ProductsSlides/Product-8.webp';
 
 // Images for Store cards
-import P1 from '../assets/StoreProducts/P1.webp';
-import P2 from '../assets/StoreProducts/P2.webp';
-import P3 from '../assets/StoreProducts/P3.webp';
-import P4 from '../assets/StoreProducts/P4.webp';
-import P5 from '../assets/StoreProducts/P5.webp';
-import P6 from '../assets/StoreProducts/P6.webp';
-import P7 from '../assets/StoreProducts/P7.webp';
-import P8 from '../assets/StoreProducts/P8.webp';
-import P9 from '../assets/StoreProducts/P8.webp';
+import P1 from '../assets/Store/StoreProducts/P1.webp';
+import P2 from '../assets/Store/StoreProducts/P2.webp';
+import P3 from '../assets/Store/StoreProducts/P3.webp';
+import P4 from '../assets/Store/StoreProducts/P4.webp';
+import P5 from '../assets/Store/StoreProducts/P5.webp';
+import P6 from '../assets/Store/StoreProducts/P6.webp';
+import P7 from '../assets/Store/StoreProducts/P7.webp';
+import P8 from '../assets/Store/StoreProducts/P8.webp';
+import P9 from '../assets/Store/StoreProducts/P8.webp';
 
 // Navigation Bar data
 export const HomeNavigations = [
