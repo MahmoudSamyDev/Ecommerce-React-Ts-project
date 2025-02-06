@@ -2,6 +2,7 @@ import Layout from '../layout/Layout';
 import Home from '../Pages/Home/Home';
 import ProductPage from '../Pages/ProductPage/ProductPage';
 import StorePage from '../Pages/StorePage/StorePage';
+import StoreCart from '../Pages/StoreCart/StoreCart';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { createContext, useState } from 'react';
 import { CartProduct_TP } from '../Types';
@@ -37,6 +38,7 @@ function App() {
                 <Route index path='home' element={<Home />} />
                 <Route path='product' element={<ProductPage />} />
                 <Route path='store' element={<StorePage />} />
+                <Route path='cart' element={<StoreCart />} />
             </Route>
           </Routes>
             

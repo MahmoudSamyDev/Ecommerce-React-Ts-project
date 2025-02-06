@@ -7,6 +7,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import IconButton from '@mui/material/IconButton';
 import ProductCartCard from './ProductCartCard';
 import { useCart, useOpenSideCart } from '../../../../hooks';
+import { Link } from 'react-router-dom';
 
 
 function CartSideBar() {
@@ -46,7 +47,9 @@ function CartSideBar() {
             </body>
             <footer className="p-4 h-[10%]">
                 <button className="font-bold bg-darkBlue text-white text-center w-full p-[8px] rounded ease-in-out duration-300 hover:bg-darkBlueHover mb-[10px]">Checkout Now {totalCartPrice}$</button>
-                <button className="text-[red] text-center w-full p-[8px] border border-[red] rounded">View Cart</button>
+                <Link to="/cart" onClick={toggleDrawer(false)}>
+                    <button className="text-[red] text-center w-full p-[8px] border border-[red] rounded">View Cart</button>
+                </Link>
             </footer>
         </Box>
     );
