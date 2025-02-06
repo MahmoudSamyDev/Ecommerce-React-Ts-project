@@ -508,3 +508,39 @@ export const StoreProductsCards = [
         rate: 1,
     },
 ]
+
+// Cart Products
+export const tempProducts = [
+    {
+        id: 1,
+        name: 'Product 1',
+        price: 10,
+        image: P1,
+        quantity: 200,
+        amount: 1,
+    },
+    {
+        id: 2,
+        name: 'Product 2',
+        price: 20,
+        image: P2,
+        quantity: 200,
+        amount: 2,
+    },
+    {
+        id: 3,
+        name: 'Product 3',
+        price: 30,
+        image: P3,
+        quantity: 200,
+        amount: 3,
+    },
+    {
+        id: 4,
+        name: 'Product 4',
+        price: 40,
+        image: P4,
+        quantity: 200,
+        amount: 4,
+    },
+]

@@ -6,6 +6,7 @@ import StoreCart from '../Pages/StoreCart/StoreCart';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { createContext, useState } from 'react';
 import { CartProduct_TP } from '../Types';
+import { tempProducts } from '../utilities/data';
 
 interface CartContextType {
   productsInCart: CartProduct_TP[];
@@ -22,7 +23,7 @@ export const CartContext = createContext<CartContextType | undefined>(undefined)
 export const CartSideBarOpen = createContext<CartSideBarOpenContextType | undefined>(undefined);
 
 function App() {
-  const [productsInCart, setProductsInCart] = useState<CartProduct_TP[]>([]);
+  const [productsInCart, setProductsInCart] = useState<CartProduct_TP[]>(tempProducts);
   const [openSideCart, setOpenSideCart] = useState(false);
   const totalprice = productsInCart?.reduce((acc, product) => acc + product.price, 0);
   const [totalCartPrice, setTotalCartPrice] = useState(totalprice);

@@ -11,4 +11,5 @@ export interface CartProduct_TP {
     price: number,
     image: string,
     quantity: number,
+    amount: number,
 }
