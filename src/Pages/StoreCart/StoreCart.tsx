@@ -2,6 +2,7 @@ import ContainerWrapper from '../../layout/Components/ContainerWrapper';
 import { useCart } from '../../hooks';
 import ProductCard from './ProductCard';
 import BuyJourneyComponent from '../BuyJourneyComponent';
+import CartProductSummary from './CartProductSummary';
 
 
 
@@ -21,9 +22,7 @@ function StoreCart() {
                             ))
                         }
                         </div>
-                        <div className="cart-products-summary flex-1 bg-white h-[100vh] rounded-[14px] shadow">
-                            
-                        </div>
+                        <CartProductSummary />
                     </div>
                 </div>
             </ContainerWrapper>
