@@ -31,7 +31,7 @@ function ProductCard({ product }: { product: CartProduct_TP}) {
         setTotalCartPrice((prev: number) => prev - (product.price));
     }
     return (
-        <div className='bg-white h-[150px] rounded-[14px] shadow relative'>
+        <div className='bg-white min-h-[150px] max-h-[fit-content] rounded-[14px] shadow relative'>
             <div className='absolute top-[6px] right-[6px]'>
                 <IconButton
                     size="small"
@@ -40,17 +40,17 @@ function ProductCard({ product }: { product: CartProduct_TP}) {
                     <CloseIcon />
                 </IconButton>
             </div>
-            <div className='flex gap-[10px] items-center'>
+            <div className='flex flex-col md:flex-row gap-[10px] items-center'>
                 <div className='product-image w-[150px] h-[150px]'>
                     <img src={product.image} alt={product.name} />
                 </div>
-                <div className='product-details flex flex-col gap-[5px] text-[20px]'>
+                <div className='product-details flex flex-col gap-[5px] text-[20px] text-center'>
                     <span>{product.name}</span>
                     <div className='product-price-based-on-ammount text-[grey] text-[15px]'>
                         <span>${product.price} x {count}</span>
                         <span className='text-officialRed ml-[15px]'>${totalProductPrice}</span>
                     </div>
-                    <div className='flex items-center'>
+                    <div className='flex items-center gap-[10px] my-[10px]'>
                         <IconButton
                             onClick={() => countChangeHandler(count - 1, 'remove')}
                             sx={{backgroundColor: '#f5f5f5', borderRadius: '10px'}}

@@ -26,7 +26,7 @@ function CartSideBar() {
 
     const list = () => (
         <Box
-            sx={{ width: 350, height: '100vh' }}
+            sx={{ width: 350 }}
             role="presentation"
         >
             <header className="flex justify-between items-center p-4 border-b h-[7%]">
