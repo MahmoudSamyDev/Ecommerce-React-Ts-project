@@ -3,6 +3,7 @@ import Home from '../Pages/Home/Home';
 import ProductPage from '../Pages/ProductPage/ProductPage';
 import StorePage from '../Pages/StorePage/StorePage';
 import StoreCart from '../Pages/StoreCart/StoreCart';
+import PaymentPage from '../Pages/PaymentPage/PaymentPage';
 import CustomerDealDetails from '../Pages/CustomerDealDetails/CustomerDealDetails';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { createContext, useState } from 'react';
@@ -42,10 +43,9 @@ function App() {
                 <Route path='store' element={<StorePage />} />
                 <Route path='cart' element={<StoreCart />} />
                 <Route path='details' element={<CustomerDealDetails />} />
-                <Route path='payment' element={<CustomerDealDetails />} />
+                <Route path='payments' element={<PaymentPage />} />
             </Route>
           </Routes>
-            
           </BrowserRouter>
         </div>
       </CartContext.Provider>

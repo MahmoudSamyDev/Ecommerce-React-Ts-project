@@ -1,19 +1,19 @@
 import ContainerWrapper from '../../layout/Components/ContainerWrapper';
 import BuyJourneyComponent from '../BuyJourneyComponent';
-import DealSummary from './DealSummary';
-import Address from './Address';
 import { Link } from 'react-router-dom';
+import PaymentMethods from './PaymentMethods/PaymentMethods';
+import PaymentSummary from './PaymentSummary';
 
-function CustomerDealDetails() {
-    return(
+
+function PaymentPage() {
+    return (
         <div className="deals-of-the-day w-full content-center py-[15px] bg-background">
             <ContainerWrapper>
                 <div className='flex flex-col gap-[15px]'>
-                    <BuyJourneyComponent route='details' />
+                    <BuyJourneyComponent route='payment' />
                     <div className='cart-page-content w-full flex justify-between gap-[15px] flex-wrap'>
                         <div className="cart-products w-full lg:w-[65%] h-[fit-content] flex flex-col gap-[30px]">
-                            <Address header="Shipping"/>
-                            <Address header="Billing"/>
+                            <PaymentMethods />
                             <div className='options w-full flex flex-col md:flex-row justify-between gap-[15px] flex-wrap'>
                                 <Link
                                     to='/cart'
@@ -21,7 +21,7 @@ function CustomerDealDetails() {
                                 >
                                     <button
                                     >
-                                        Back to Cart
+                                        Back to Details
                                     </button>
                                 </Link>
                                 <Link
@@ -30,12 +30,12 @@ function CustomerDealDetails() {
                                 >
                                     <button
                                 >
-                                    Proceed To Payment
+                                    Review
                                 </button>
                                 </Link>
                             </div>
                         </div>
-                        <DealSummary />
+                        <PaymentSummary />
                     </div>
                 </div>
             </ContainerWrapper>
@@ -43,6 +43,4 @@ function CustomerDealDetails() {
     );
 }
 
-
-
-export default CustomerDealDetails;
+export default PaymentPage;

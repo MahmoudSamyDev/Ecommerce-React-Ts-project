@@ -26,10 +26,10 @@ function CartSideBar() {
 
     const list = () => (
         <Box
-            sx={{ width: 350 }}
+            sx={{ width: 350, display: 'flex', flexDirection: 'column', position: 'relative', height: '100%' }}
             role="presentation"
         >
-            <header className="flex justify-between items-center p-4 border-b h-[7%]">
+            <header className="flex justify-between items-center border-b p-4">
                 <div>
                     <ShoppingCartOutlinedIcon sx={{ color: '#2b3445', cursor: 'pointer', mr: '10px' }} />
                     <span>{productsInCart.length || '0'} Items</span>
@@ -38,16 +38,16 @@ function CartSideBar() {
                     <CloseIcon  sx={{ color: '#2b3445', cursor: 'pointer'}}/>
                 </IconButton>
             </header>
-            <body className="p-4 border-b h-[80%] overflow-y-auto">
+            <body className="p-4 h-[75%] overflow-y-auto">
                 {
                     productsInCart.map((product) => (
                         <ProductCartCard key={product.id} product={product} />
                     ))
                 }
             </body>
-            <footer className="p-4 h-[10%]">
-                <button className="font-bold bg-darkBlue text-white text-center w-full p-[8px] rounded ease-in-out duration-300 hover:bg-darkBlueHover mb-[10px]">Checkout Now {totalCartPrice}$</button>
-                <Link to="/cart" onClick={toggleDrawer(false)}>
+            <footer className="p-4 flex flex-col items-center justify-center gap-[10px] absolute bottom-0 w-full">
+                <button className="font-bold bg-officialRed text-white text-center w-full p-[8px] rounded ease-in-out duration-300 hover:bg-[red]">Checkout Now {totalCartPrice}$</button>
+                <Link to="/cart" onClick={toggleDrawer(false)} style={{width: '100%'}}>
                     <button className="text-[red] text-center w-full p-[8px] border border-[red] rounded">View Cart</button>
                 </Link>
             </footer>

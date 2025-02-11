@@ -2,7 +2,7 @@ import Box from '@mui/material/Box';
 import FormControl from '@mui/material/FormControl';
 import TextField from '@mui/material/TextField';
 import { CountriesList, StatesList } from '../../../utilities/data';
-import BasicSelection from '../../Components/BasicSelection';
+import BasicSelection from '../../../layout/Components/FormComponents/BasicSelection';
 
 function ShippingEstimates() {
 

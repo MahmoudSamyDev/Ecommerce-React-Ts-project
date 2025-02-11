@@ -1,5 +1,5 @@
-import TextFieldInput from './TextFieldInput';
-import BasicSelection from '../Components/BasicSelection';
+import TextFieldInput from '../../layout/Components/FormComponents/TextFieldInput';
+import BasicSelection from '../../layout/Components/FormComponents/BasicSelection';
 import { useState } from 'react';
 import { CountriesList } from '../../utilities/data';
 import Checkbox from '@mui/material/Checkbox';
