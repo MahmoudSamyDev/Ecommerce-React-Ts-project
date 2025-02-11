@@ -544,3 +544,69 @@ export const tempProducts = [
         amount: 4,
     },
 ]
+
+export const CountriesList = [
+    {
+        id: 0,
+        name: 'United States',
+        value: 'US'
+    },
+    {
+        id: 1,
+        name: 'Canada',
+        value: 'CA'
+    },
+    {
+        id: 2,
+        name: 'Mexico',
+        value: 'MX'
+    },
+    {
+        id: 3,
+        name: 'United Kingdom',
+        value: 'UK'
+    },
+    {
+        id: 4,
+        name: 'Germany',
+        value: 'DE'
+    },
+    {
+        id: 5,
+        name: 'France',
+        value: 'FR'
+    }
+]
+
+export const StatesList = [
+    {
+        id: 0,
+        name: 'California',
+        value: 'CA'
+    },
+    {
+        id: 1,
+        name: 'Texas',
+        value: 'TX'
+    },
+    {
+        id: 2,
+        name: 'New York',
+        value: 'NY'
+    },
+    {
+        id: 3,
+        name: 'Florida',
+        value: 'FL'
+    },
+    {
+        id: 4,
+        name: 'Illinois',
+        value: 'IL'
+    },
+    {
+        id: 5,
+        name: 'Pennsylvania',
+        value: 'PA'
+    }
+]
