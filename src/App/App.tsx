@@ -4,22 +4,15 @@ import ProductPage from '../Pages/ProductPage/ProductPage';
 import StorePage from '../Pages/StorePage/StorePage';
 import StoreCart from '../Pages/StoreCart/StoreCart';
 import PaymentPage from '../Pages/PaymentPage/PaymentPage';
+import ReviewPage from '../Pages/ReviewPage/ReviewPage';
 import CustomerDealDetails from '../Pages/CustomerDealDetails/CustomerDealDetails';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { createContext, useState } from 'react';
 import { CartProduct_TP } from '../Types';
 import { tempProducts } from '../utilities/data';
+import { CartContextType, CartSideBarOpenContextType } from '../Types';
 
-interface CartContextType {
-  productsInCart: CartProduct_TP[];
-  setProductsInCart: React.Dispatch<React.SetStateAction<CartProduct_TP[]>>;
-}
-interface CartSideBarOpenContextType {
-  openSideCart: boolean;
-  setOpenSideCart: React.Dispatch<React.SetStateAction<boolean>>;
-  totalCartPrice: number;
-  setTotalCartPrice: React.Dispatch<React.SetStateAction<number>>;
-}
+
 
 export const CartContext = createContext<CartContextType | undefined>(undefined);
 export const CartSideBarOpen = createContext<CartSideBarOpenContextType | undefined>(undefined);
@@ -44,6 +37,7 @@ function App() {
                 <Route path='cart' element={<StoreCart />} />
                 <Route path='details' element={<CustomerDealDetails />} />
                 <Route path='payments' element={<PaymentPage />} />
+                <Route path='review' element={<ReviewPage />} />
             </Route>
           </Routes>
           </BrowserRouter>

@@ -610,3 +610,31 @@ export const StatesList = [
         value: 'PA'
     }
 ]
+
+export const orderStatusReviewColors = [
+    {
+        status: 'pending',
+        color: '#efefec'
+    },
+    {
+        status: 'processing',
+        color: '#8ed7f1'
+    },
+    {
+        status: 'shipped',
+        color: '#8ed7f1'
+    },
+    {
+        status: 'delivered',
+        color: '#d0efd0'
+    },
+    {
+        status: 'cancelled',
+        color: '#fbc0c0'
+    },
+    {
+        status: 'returned',
+        color: '#62c38c'
+    }
+];
+

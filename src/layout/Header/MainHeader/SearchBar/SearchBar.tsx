@@ -31,7 +31,7 @@ function SearchBar() {
         setAnchorEl(null);
     };
     return(
-        <div className='search-bar-container my-[30px] md:my-0 w-full md:w-[650px] flex justify-between border border-gray-300 bg-[#f5fcff] rounded-[10px] px-[0px]'>
+        <div className='search-bar-container my-[30px] md:my-0 w-full md:w-[650px] flex justify-between border border-gray-300 bg-[#f5fcff] rounded-[10px] px-[0px] mx-auto'>
             <Search>
                 <SearchIconWrapper sx={{color: 'grey', borderRight: '1px solid #e0e0e0', width: '43px'}}>
                     <SearchIcon />
