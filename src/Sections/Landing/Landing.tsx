@@ -2,6 +2,8 @@ import ContainerWrapper from '../../layout/Components/ContainerWrapper';
 import Box from '@mui/material/Box';
 import SliderAds from './SliderLanding';
 import BoxAd from './BoxAd';
+import Summer from '../../assets/Landing/1.jpg';
+import Computer from '../../assets/Landing/1.jpg';
 
 function Landing() {
     return (
@@ -12,11 +14,11 @@ function Landing() {
                     <Box sx={{flexDirection: 'column', display:'flex', gap: '10px', justifyContent: 'space-between'}}>
                         <BoxAd 
                             content={{title: 'New Arrivals', offer: <span>Summer<br /> SALE 20% OFF</span>} } 
-                            img={<img src="src/assets/Landing/3.jpg" className='h-full w-full' alt="placeholder" />}
+                            img={<img src={Summer} className='h-full w-full' alt="placeholder" />}
                         />
                         <BoxAd
                             content={{title: 'Gaming 4k', offer: <span>Desktop &<br /> Labtops <br /> SALE 20% OFF</span>} } 
-                            img={<img src="src/assets/Landing/2.jpg" className='h-full w-full' alt="placeholder" />}
+                            img={<img src={Computer} className='h-full w-full' alt="placeholder" />}
                         />
                     </Box>
                 </div>
@@ -24,7 +26,5 @@ function Landing() {
         </div>
     );
 }
-
-
 
 export default Landing;
