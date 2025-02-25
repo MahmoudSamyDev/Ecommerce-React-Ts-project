@@ -1,5 +1,5 @@
-import playStore from '../../assets/footer/playstore.png';
-import appStore from '../../assets/footer/appStore.png';
+// import playStore from '../../assets/footer/playstore.png';
+// import appStore from '../../assets/footer/appStore.png';
 
 function FooterDescSection() {
     return (
@@ -12,10 +12,10 @@ function FooterDescSection() {
             </div>
             <div className="apps w-[70%] flex justify-between items-center gap-4">
                 <div className='playstore w-[170px] h-[45px] rounded-[10px] overflow-hidden cursor-pointer'>
-                    <img src={playStore} alt='playstore' className='w-full h-full'/>
+                    {/* <img src={playStore} alt='playstore' className='w-full h-full'/> */}
                 </div>
                 <div className='appStore w-[170px] h-[45px] rounded-[10px] overflow-hidden cursor-pointer'>
-                    <img src={appStore} alt='appStore' className='w-full h-full'/>
+                    {/* <img src={appStore} alt='appStore' className='w-full h-full'/> */}
                 </div>
             </div>
         </section>
