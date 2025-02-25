@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
-function BuyJourneyComponent({ route }: { route: string }) {
+function BuyJourneyComponent({ route }: { route?: string }) {
+    console.log(route);
     return (
         <div className="buy-journey w-full bg-background p-[15px] flex justify-center items-center h-[fit-content]">
             <div className="buy-journey-illustration relative w-full lg:w-[70%] xl:w-[50%] h-full md:h-[70px]">
