@@ -1,10 +1,10 @@
-interface ProductBox_TP {
+type Product = {
     id: number;
     title: string;
     src: string;
-}
+};
 
-function ProductBox({ product }: { product: ProductBox_TP }) {
+function ProductBox({ product }: { product: Product }) {
     return (
         <div key={product.id} className="product-nav-item group cursor-pointer relative overflow-hidden rounded-[15px]">
             <img 

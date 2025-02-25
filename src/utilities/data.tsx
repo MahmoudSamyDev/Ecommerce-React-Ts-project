@@ -7,6 +7,12 @@ import ProductOne from '../assets/RecommendedProducts/RelatedProductOne.webp';
 import ProductTwo from '../assets/RecommendedProducts/RelatedProductTwo.webp';
 import ProductThree from '../assets/RecommendedProducts/RelatedProductThree.webp';
 import ProductFour from '../assets/RecommendedProducts/RelatedProductFour.webp';
+import Toys from '../assets/ProductsNav/Toys.webp';
+import Sports from '../assets/ProductsNav/Sports.webp';
+import Gaming from '../assets/ProductsNav/Gaming.webp';
+import Furniture from '../assets/ProductsNav/Furniture.webp';
+import Fashion from '../assets/ProductsNav/Fashion.webp';
+import Cameras from '../assets/ProductsNav/Cameras.webp';
 
 // Images for products cards
 import Product1 from '../assets//ProductsSlides/Product-1.webp';
@@ -105,36 +111,38 @@ export const valuesCards = [
         description: 'Secure system'
     }
 ]
+
+
 export const Products = [
     {
         id: 1,
         title: 'Toys',
-        src: 'src/assets/ProductsNav/Toys.webp'
+        src: Toys,
     },
     {
         id: 2,
         title: 'Sports',
-        src: 'src/assets/ProductsNav/Sports.webp'
+        src: Sports,
     },
     {
         id: 3,
         title: 'Gaming',
-        src: 'src/assets/ProductsNav/Gaming.webp'
+        src: Gaming,
     },
     {
         id: 4,
         title: 'Furniture',
-        src: 'src/assets/ProductsNav/Furniture.webp'
+        src: Furniture,
     },
     {
         id: 5,
         title: 'Fashion',
-        src: 'src/assets/ProductsNav/Fashion.webp'
+        src: Fashion,
     },
     {
         id: 6,
         title: 'Cameras',
-        src: 'src/assets/ProductsNav/Cameras.webp'
+        src: Cameras,
     },
 ]
 
