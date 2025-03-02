@@ -2,8 +2,8 @@ import ContainerWrapper from '../../layout/Components/ContainerWrapper';
 import Box from '@mui/material/Box';
 import SliderAds from './SliderLanding';
 import BoxAd from './BoxAd';
-import Summer from '../../assets/Landing/1.jpg';
-import Computer from '../../assets/Landing/1.jpg';
+import Computer from '../../assets/Landing/2.jpg';
+import Summer from '../../assets/Landing/3.jpg';
 
 function Landing() {
     return (
